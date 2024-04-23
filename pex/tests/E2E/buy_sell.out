@@ -1,0 +1,51 @@
+[PEX] Starting
+[PEX] Trading 2 products: GPU Router
+[PEX] Created FIFO /tmp/pe_exchange_0
+[PEX] Created FIFO /tmp/pe_trader_0
+[PEX] Starting trader 0 (tests/E2E/buy_sell)
+[PEX] Connected to /tmp/pe_exchange_0
+[PEX] Connected to /tmp/pe_trader_0
+[PEX] [T0] Parsing command: <BUY 0 GPU 15 150>
+[PEX]   Product: GPU; Buy levels: 1; Sell levels: 0
+[PEX]           BUY 15 @ $150 (1 order)
+[PEX]   Product: Router; Buy levels: 0; Sell levels: 0
+[PEX]   --POSITIONS--
+[PEX]   Trader 0: GPU 0 ($0), Router 0 ($0)
+[PEX] [T0] Parsing command: <BUY 1 Router 10 100>
+[PEX]   --ORDERBOOK--
+[PEX]   Product: GPU; Buy levels: 1; Sell levels: 0
+[PEX]           BUY 15 @ $150 (1 order)
+[PEX]   Product: Router; Buy levels: 1; Sell levels: 0
+[PEX]           BUY 10 @ $100 (1 order)
+[PEX]   --POSITIONS--
+[PEX]   Trader 0: GPU 0 ($0), Router 0 ($0)
+[PEX] [T0] Parsing command: <BUY 2 Router 10 100>
+[PEX]   --ORDERBOOK--
+[PEX]   Product: GPU; Buy levels: 1; Sell levels: 0
+[PEX]           BUY 15 @ $150 (1 order)
+[PEX]   Product: Router; Buy levels: 1; Sell levels: 0
+[PEX]           BUY 20 @ $100 (2 orders)
+[PEX]   --POSITIONS--
+[PEX]   Trader 0: GPU 0 ($0), Router 0 ($0)
+[PEX] [T0] Parsing command: <BUY 3 GPU 20 200>
+[PEX]   --ORDERBOOK--
+[PEX]   Product: GPU; Buy levels: 2; Sell levels: 0
+[PEX]           BUY 20 @ $200 (1 order)
+[PEX]           BUY 15 @ $150 (1 order)
+[PEX]   Product: Router; Buy levels: 1; Sell levels: 0
+[PEX]           BUY 20 @ $100 (2 orders)
+[PEX]   --POSITIONS--
+[PEX]   Trader 0: GPU 0 ($0), Router 0 ($0)
+[PEX] [T0] Parsing command: <SELL 4 GPU 20 130>
+[PEX] Match: Order 3 [T0], New Order 4 [T0], value: $4000, fee: $40.
+[PEX]   --ORDERBOOK--
+[PEX]   Product: GPU; Buy levels: 1; Sell levels: 0
+[PEX]           BUY 15 @ $150 (1 order)
+[PEX]   Product: Router; Buy levels: 1; Sell levels: 0
+[PEX]           BUY 20 @ $100 (2 orders)
+[PEX]   --POSITIONS--
+[PEX]   Trader 0: GPU 0 ($-40), Router 0 ($0)
+[PEX] [T0] Parsing command: <SELL 5 GPU 20 500SELL 5 Router 20 100>
+[PEX] Trader 0 disconnected
+[PEX] Trading completed
+[PEX] Exchange fees collected: $40
